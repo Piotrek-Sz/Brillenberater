@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/Piotrek-Sz/Brillenberater#readme",
   "devDependencies": {
-    "grunt-contrib-sass": "^0.9.2",
-    "grunt-contrib-watch": "^0.6.1"
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-sass": "^1.1.0"
   }
 }
