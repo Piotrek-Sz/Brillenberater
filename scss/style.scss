@@ -2,6 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-size: 1.6rem;
+    color: $base;
 }
 
 .container {
@@ -61,7 +62,7 @@ body {
 }
 
 .questions-nav-container {
-	padding-top: 20px;
+    padding-top: 20px;
 }
 
 .questions-nav-list {
@@ -120,10 +121,10 @@ body {
     }
     a.quest-active {
         background-color: $purple-1;
-        &:after{
-           background-position-x: -33px; 
+        &:after {
+            background-position-x: -33px;
         }
-        &:before{
+        &:before {
             background-position-x: -45px;
         }
     }
@@ -132,12 +133,172 @@ body {
     }
 }
 
-.questions-1, .questions-2 {
-	padding-top: 20px;
+.questions-1,
+.questions-2 {
+    padding-top: 20px;
 }
 
 .question-text {
-	text-align: center;
+    text-align: center;
     font-size: 2.5rem;
     color: $purple-1;
+}
+
+.answer-img {
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.result {
+    border: 1px solid #c3c3c3;
+    padding-bottom: 20px;
+    margin: 40px 0 0 0;
+}
+
+.product-img {
+    padding: 20px;
+    img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+.features-header {
+    border-bottom: 1px solid #c3c3c3;
+}
+
+.features-list {
+    margin: 15px 0 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+        padding: 2px 0 0 20px;
+        display: block;
+        position: relative;
+    }
+    .feature-yes {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            z-index: 3;
+            background-image: url(../img/sprites.png);
+            background-position-x: -302px;
+            background-repeat: no-repeat;
+        }
+    }
+    .feature-no {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 0;
+            height: 15px;
+            width: 15px;
+            z-index: 3;
+            background-image: url(../img/sprites.png);
+            background-position-x: -326px;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
+.features-text {
+    a {
+        text-decoration: none;
+        color: $base;
+        font-weight: 700;
+        display: block;
+        span {
+            position: relative;
+            &:after {
+                content: "";
+                position: absolute;
+                top: 7px;
+                right: -20px;
+                height: 7px;
+                width: 10px;
+                z-index: 3;
+                background-image: url(../img/sprites.png);
+                background-position-x: -350px;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+}
+
+.shopping {
+	padding: 0;
+}
+
+.price-container {
+    text-align: center;
+    border: 1px solid #c3c3c3;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.price-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.price {
+    padding: 0;
+    color: $purple-1;
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.buy-button {
+    a {
+        display: block;
+        position: relative;
+        padding: 15px 0 15px 50px;
+        text-decoration: none;
+        color: #ffffff;
+        text-shadow: #1a1a1a 1px 1px 0px;
+        font-weight: 700;
+        font-size: 1.5rem;
+        @media only screen and (min-width: 1200px){
+            font-size: 1.8rem
+        }
+            &:before {
+            content: "";
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            height: 16px;
+            width: 16px;
+            z-index: 3;
+            background-image: url(../img/sprites.png);
+            background-position-x: -370px;
+            background-repeat: no-repeat;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            top: 12px;
+            right: 20px;
+            height: 30px;
+            width: 30px;
+            z-index: 3;
+            background-image: url(../img/sprites.png);
+            background-position-x: -397px;
+            background-repeat: no-repeat;
+        }
+        
+        
+    }
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    border-radius: 5px;
+    background: linear-gradient($green-2 0%, $green-1 100%);
 }
