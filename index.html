@@ -10,6 +10,7 @@
 </script>
 <![endif]-->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -18,6 +19,7 @@
 
 <body>
     <div class="container">
+       <!--HEADER-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="refresh">
@@ -34,6 +36,7 @@
 
             </div>
         </div>
+        <!--QUESTIONS NAV-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
                 <div class="questions-nav-container">
@@ -68,56 +71,151 @@
                 </div>
             </div>
         </div>
+        <!--QUESTIONS-->
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="questions-1">
+                <div class="question-1">
                     <div class="question-text">
                         Welche Gesichtsform haben Sie?
                     </div>
                     <div class="row">
 
-                        <div class="col-xs-1 col-sm-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="answer-content">
-                                <div class="answer-img"><img src="img/ans-1.jpg" alt="Answer 1 image"></div>
-                                <div class="answer-check"></div>
+                                <div class="answer-img"><img src="img/ans-1.jpg" alt="Answer 1 image">
+                                <span class="answer-info-text" id="ans-1-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-1">
+                                        <span class="answer-label">Eckig</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-1 col-sm-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="answer-content">
-                                <div class="answer-img"><img src="img/ans-2.jpg" alt="Answer 2 image"></div>
-                                <div class="answer-check"></div>
+                                <div class="answer-img"><img src="img/ans-2.jpg" alt="Answer 2 image">
+                                <span class="answer-info-text" id="ans-2-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-2">
+                                        <span class="answer-label">Rund</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-1 col-sm-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="answer-content">
-                                <div class="answer-img"><img src="img/ans-3.jpg" alt="Answer 3 image"></div>
-                                <div class="answer-check"></div>
+                                <div class="answer-img">
+                                    <img src="img/ans-3.jpg" alt="Answer 3 image">
+                                    <span class="answer-info-text" id="ans-3-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-3">
+                                        <span class="answer-label">Oval</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-xs-1 col-sm-3">
+                        <div class="col-xs-12 col-sm-6 col-md-3">
                             <div class="answer-content">
-                                <div class="answer-img"><img src="img/ans-4.jpg" alt="Answer 4 image"></div>
-                                <div class="answer-check"></div>
+                                <div class="answer-img"><img src="img/ans-4.jpg" alt="Answer 4 image">
+                                <span class="answer-info-text" id="ans-4-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-4">
+                                        <span class="answer-label">Herzförmig</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="questions-2">
+                
+                <div class="question-2">
                     <div class="question-text">
                         Welche Anforderungen stellen Sie an die Fassung?
                     </div>
-                    <div class="answers-container">
-                        <ol class="answers-list">
-                            <li class="answer of3"></li>
-                            <li class="answer of3"></li>
-                            <li class="answer of3"></li>
-                        </ol>
+                    <div class="row">
+
+                        <div class="col-xs-12 col-md-4">
+                            <div class="answer-content">
+                                <div class="answer-img"><img src="img/ans-5.jpg" alt="Answer 5 image">
+                                <span class="answer-info-text" id="ans-5-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-5">
+                                        <span class="answer-label">Bruchsicher &amp; rostfrei: <br>
+Metall-Fassungen</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="answer-content">
+                                <div class="answer-img"><img src="img/ans-6.jpg" alt="Answer 6 image">
+                                <span class="answer-info-text" id="ans-6-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-6">
+                                        <span class="answer-label">Farbenfroh &amp; extravagant: <br>
+Kunststoff-Fassungen</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-md-4">
+                            <div class="answer-content">
+                                <div class="answer-img">
+                                    <img src="img/ans-7.jpg" alt="Answer 7 image">
+                                    <span class="answer-info-text" id="ans-7-info-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi aliquam commodi inventore enim esse dolorum rerum. Velit earum, aut tenetur commodi, libero qui molestias alias!</span>
+                                </div>
+                                <div class="answer-check">
+                                    <div class="label-container">
+                                        <input type="checkbox" class="answer" id="answer-7">
+                                        <span class="answer-label">Leicht &amp; stabil: <br>
+Titan-Fassungen</span>
+                                        <span class="answer-info"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                
+                <div class="buttons">
+                    <div class="back">
+                        <a href="#" id="back-button">
+                            ZURÜCK
+                        </a>
+                    </div>
+                    <div class="next">
+                        <a href="#" id="next-button">
+                            WEITER
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+        <!--RESULTS-->
         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-12">
+                <div class="result-title">Produkte, die Ihren Wunschen entsprechen</div>
+            </div>
             <div class="col-xs-12 col-sm-6 col-md-12">
                 <div class="row result">
                     <div class="col-xs-12 col-sm-12 col-md-5">
